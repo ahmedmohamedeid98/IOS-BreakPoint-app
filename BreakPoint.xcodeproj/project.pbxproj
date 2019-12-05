@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EF632371057355691470BD5 /* Pods_BreakPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6203B318711040E9701D3831 /* Pods_BreakPoint.framework */; };
 		E21BF90D2399B77300513D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF90C2399B77300513D64 /* AppDelegate.swift */; };
 		E21BF90F2399B77300513D64 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF90E2399B77300513D64 /* FirstViewController.swift */; };
 		E21BF9112399B77300513D64 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF9102399B77300513D64 /* SecondViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19D0794BDC57869776D74B31 /* Pods-BreakPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.debug.xcconfig"; path = "Target Support Files/Pods-BreakPoint/Pods-BreakPoint.debug.xcconfig"; sourceTree = "<group>"; };
+		6203B318711040E9701D3831 /* Pods_BreakPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9472E5F36162B4871A9D53BE /* Pods-BreakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.release.xcconfig"; path = "Target Support Files/Pods-BreakPoint/Pods-BreakPoint.release.xcconfig"; sourceTree = "<group>"; };
 		E21BF9092399B77300513D64 /* BreakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21BF90C2399B77300513D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E21BF90E2399B77300513D64 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF632371057355691470BD5 /* Pods_BreakPoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C45C265F2027A4A7083E39E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6203B318711040E9701D3831 /* Pods_BreakPoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E02E496B007CD89C94F9B7E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19D0794BDC57869776D74B31 /* Pods-BreakPoint.debug.xcconfig */,
+				9472E5F36162B4871A9D53BE /* Pods-BreakPoint.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E21BF9002399B77300513D64 = {
 			isa = PBXGroup;
 			children = (
 				E21BF90B2399B77300513D64 /* BreakPoint */,
 				E21BF90A2399B77300513D64 /* Products */,
+				E02E496B007CD89C94F9B7E5 /* Pods */,
+				2C45C265F2027A4A7083E39E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21BF91D2399B77900513D64 /* Build configuration list for PBXNativeTarget "BreakPoint" */;
 			buildPhases = (
+				96AE33F5C7699CD6E9ECEBDB /* [CP] Check Pods Manifest.lock */,
 				E21BF9052399B77300513D64 /* Sources */,
 				E21BF9062399B77300513D64 /* Frameworks */,
 				E21BF9072399B77300513D64 /* Resources */,
+				9B38E95F415A3C1554DD8D51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96AE33F5C7699CD6E9ECEBDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakPoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B38E95F415A3C1554DD8D51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakPoint/Pods-BreakPoint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakPoint/Pods-BreakPoint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakPoint/Pods-BreakPoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E21BF9052399B77300513D64 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		E21BF91E2399B77900513D64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D0794BDC57869776D74B31 /* Pods-BreakPoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +375,7 @@
 		};
 		E21BF91F2399B77900513D64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9472E5F36162B4871A9D53BE /* Pods-BreakPoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
