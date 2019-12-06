@@ -13,7 +13,6 @@
 		E21BF9142399B77300513D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21BF9122399B77300513D64 /* Main.storyboard */; };
 		E21BF9162399B77900513D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21BF9152399B77900513D64 /* Assets.xcassets */; };
 		E21BF9192399B77900513D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21BF9172399B77900513D64 /* LaunchScreen.storyboard */; };
-		E21BF9212399BD6100513D64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21BF9202399BD6100513D64 /* GoogleService-Info.plist */; };
 		E21BF92A2399E1DF00513D64 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF9292399E1DF00513D64 /* PaddingTextField.swift */; };
 		E21BF92C2399E4A700513D64 /* UserAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF92B2399E4A700513D64 /* UserAuthVC.swift */; };
 		E21BF92E2399E4D000513D64 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF92D2399E4D000513D64 /* LoginVC.swift */; };
@@ -22,6 +21,7 @@
 		E21BF934239A222000513D64 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF933239A222000513D64 /* AuthServices.swift */; };
 		E21BF936239A3A9E00513D64 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF935239A3A9E00513D64 /* FeedVC.swift */; };
 		E21BF938239A71A000513D64 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF937239A71A000513D64 /* MeVC.swift */; };
+		E21BF93A239A7C0E00513D64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		E21BF9152399B77900513D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21BF9182399B77900513D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E21BF91A2399B77900513D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E21BF9202399BD6100513D64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E21BF9292399E1DF00513D64 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		E21BF92B2399E4A700513D64 /* UserAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthVC.swift; sourceTree = "<group>"; };
 		E21BF92D2399E4D000513D64 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		E21BF933239A222000513D64 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		E21BF935239A3A9E00513D64 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E21BF937239A71A000513D64 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				E21BF9222399CDE900513D64 /* Controllers */,
 				E21BF9282399CE4700513D64 /* Support */,
 				E21BF91A2399B77900513D64 /* Info.plist */,
-				E21BF9202399BD6100513D64 /* GoogleService-Info.plist */,
+				E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */,
 			);
 			path = BreakPoint;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21BF9192399B77900513D64 /* LaunchScreen.storyboard in Resources */,
-				E21BF9212399BD6100513D64 /* GoogleService-Info.plist in Resources */,
+				E21BF93A239A7C0E00513D64 /* GoogleService-Info.plist in Resources */,
 				E21BF9162399B77900513D64 /* Assets.xcassets in Resources */,
 				E21BF9142399B77300513D64 /* Main.storyboard in Resources */,
 			);
