@@ -22,6 +22,7 @@
 		E21BF936239A3A9E00513D64 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF935239A3A9E00513D64 /* FeedVC.swift */; };
 		E21BF938239A71A000513D64 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF937239A71A000513D64 /* MeVC.swift */; };
 		E21BF93A239A7C0E00513D64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */; };
+		E21BF93C239AA82100513D64 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF93B239AA82100513D64 /* CreatePostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E21BF935239A3A9E00513D64 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E21BF937239A71A000513D64 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E21BF93B239AA82100513D64 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				E21BF92B2399E4A700513D64 /* UserAuthVC.swift */,
 				E21BF92D2399E4D000513D64 /* LoginVC.swift */,
 				E21BF937239A71A000513D64 /* MeVC.swift */,
+				E21BF93B239AA82100513D64 /* CreatePostVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				E21BF92E2399E4D000513D64 /* LoginVC.swift in Sources */,
 				E21BF932239A1E4900513D64 /* DataServices.swift in Sources */,
 				E21BF92A2399E1DF00513D64 /* PaddingTextField.swift in Sources */,
+				E21BF93C239AA82100513D64 /* CreatePostVC.swift in Sources */,
 				E21BF90D2399B77300513D64 /* AppDelegate.swift in Sources */,
 				E21BF934239A222000513D64 /* AuthServices.swift in Sources */,
 				E21BF930239A1DDC00513D64 /* ShadowView.swift in Sources */,
