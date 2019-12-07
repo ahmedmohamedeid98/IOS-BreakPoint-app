@@ -74,4 +74,63 @@ class DataServices{
         }
     }
     
+    func getEmail(withQuery query: String, handler: @escaping (_ emails:[String])-> ()){
+        var emailArray = [String]()
+        REF_USERS.observe(.value) { (dataSnapshot) in
+            guard let data = dataSnapshot.children.allObjects as? [DataSnapshot] else {
+                handler([])
+                return
+            }
+            for user in data{
+                let email = user.childSnapshot(forPath: "email").value as! String
+                if email.contains(query) && email != Auth.auth().currentUser?.email {
+                    emailArray.append(email)
+                }
+            }
+            handler(emailArray)
+        }
+    }
+    
+    func getIdes(withEmails emails:[String], handler:@escaping(_ idesArray:[String])->()){
+        var idesArray = [String]()
+        REF_USERS.observeSingleEvent(of: .value) { (DataSnapshot) in
+            guard let users = DataSnapshot.children.allObjects as? [DataSnapshot] else{
+                handler([])
+                return}
+            for user in users{
+                let email = user.childSnapshot(forPath: "email").value as! String
+                if emails.contains(email){
+                    idesArray.append(user.key)
+                }
+            }
+            handler(idesArray)
+        }
+    }
+    
+    func createGroup(withTitle title:String, andDescription description:String, withUserIds ides: [String], handle: @escaping(_ groupCreated:Bool)->()){
+        REF_GROUPS.childByAutoId().updateChildValues(["title":title, "description":description, "members":ides])
+        handle(true)
+    }
+    
+    func getGourpsDetails(handler:@escaping (_ groups:[Group])->()){
+        var groupsArray = [Group]()
+        REF_GROUPS.observeSingleEvent(of: .value) { (dataSnapshot) in
+            guard let groups = dataSnapshot.children.allObjects as? [DataSnapshot] else {
+                handler([])
+                return
+            }
+            for group in groups{
+                let members = group.childSnapshot(forPath: "members").value as! [String]
+                //make sure this group belong me not the other's groups.
+                if members.contains((Auth.auth().currentUser?.uid)!){
+                    let title = group.childSnapshot(forPath: "title").value as! String
+                    let desc = group.childSnapshot(forPath: "description").value as! String
+                    let theGroup = Group(title: title, description: desc, key: group.key, members: members)
+                    groupsArray.append(theGroup)
+                }
+            }
+            handler(groupsArray)
+        }
+    }
+    
 }

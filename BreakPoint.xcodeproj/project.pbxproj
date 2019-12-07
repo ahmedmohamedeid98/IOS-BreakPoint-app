@@ -26,6 +26,10 @@
 		E21BF943239AD55B00513D64 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF942239AD55B00513D64 /* UIViewExt.swift */; };
 		E21BF945239ADB0F00513D64 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF944239ADB0F00513D64 /* FeedCell.swift */; };
 		E21BF948239B103700513D64 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF947239B103700513D64 /* Message.swift */; };
+		E21EA499239B41470009C04E /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21EA498239B41470009C04E /* CreateGroupVC.swift */; };
+		E21EA49B239B54CA0009C04E /* userCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21EA49A239B54CA0009C04E /* userCell.swift */; };
+		E27821C7239BC2F70067A720 /* groupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27821C6239BC2F70067A720 /* groupCell.swift */; };
+		E27821C9239BC7A70067A720 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27821C8239BC7A70067A720 /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		E21BF942239AD55B00513D64 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		E21BF944239ADB0F00513D64 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		E21BF947239B103700513D64 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E21EA498239B41470009C04E /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		E21EA49A239B54CA0009C04E /* userCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userCell.swift; sourceTree = "<group>"; };
+		E27821C6239BC2F70067A720 /* groupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupCell.swift; sourceTree = "<group>"; };
+		E27821C8239BC7A70067A720 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,7 @@
 				E21BF92D2399E4D000513D64 /* LoginVC.swift */,
 				E21BF937239A71A000513D64 /* MeVC.swift */,
 				E21BF93B239AA82100513D64 /* CreatePostVC.swift */,
+				E21EA498239B41470009C04E /* CreateGroupVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -136,6 +145,8 @@
 				E21BF9292399E1DF00513D64 /* PaddingTextField.swift */,
 				E21BF92F239A1DDC00513D64 /* ShadowView.swift */,
 				E21BF944239ADB0F00513D64 /* FeedCell.swift */,
+				E21EA49A239B54CA0009C04E /* userCell.swift */,
+				E27821C6239BC2F70067A720 /* groupCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				E21BF947239B103700513D64 /* Message.swift */,
+				E27821C8239BC7A70067A720 /* Group.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,12 +305,16 @@
 			files = (
 				E21BF943239AD55B00513D64 /* UIViewExt.swift in Sources */,
 				E21BF945239ADB0F00513D64 /* FeedCell.swift in Sources */,
+				E27821C7239BC2F70067A720 /* groupCell.swift in Sources */,
 				E21BF938239A71A000513D64 /* MeVC.swift in Sources */,
 				E21BF936239A3A9E00513D64 /* FeedVC.swift in Sources */,
 				E21BF9112399B77300513D64 /* GroupsVC.swift in Sources */,
 				E21BF92C2399E4A700513D64 /* UserAuthVC.swift in Sources */,
 				E21BF92E2399E4D000513D64 /* LoginVC.swift in Sources */,
 				E21BF932239A1E4900513D64 /* DataServices.swift in Sources */,
+				E27821C9239BC7A70067A720 /* Group.swift in Sources */,
+				E21EA49B239B54CA0009C04E /* userCell.swift in Sources */,
+				E21EA499239B41470009C04E /* CreateGroupVC.swift in Sources */,
 				E21BF92A2399E1DF00513D64 /* PaddingTextField.swift in Sources */,
 				E21BF93C239AA82100513D64 /* CreatePostVC.swift in Sources */,
 				E21BF90D2399B77300513D64 /* AppDelegate.swift in Sources */,

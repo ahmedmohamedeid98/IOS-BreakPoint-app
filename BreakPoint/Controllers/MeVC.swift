@@ -11,17 +11,19 @@ import Firebase
 
 class MeVC: UIViewController {
 
+    //MARK:- Properities
     @IBOutlet weak var userProfileImage: UIImageView!
-    
     @IBOutlet weak var userProfileAccount: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    //MARK:- Init
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        userProfileAccount.text = Auth.auth().currentUser?.email
     }
     
+    
+    //MARK:- Configure Buttons
     @IBAction func singoutButtonWasPressed(_ sender: Any) {
         let alert = UIAlertController(title: "Logout?", message: "Are you sure to logout?", preferredStyle: .actionSheet)
         let logoutAction = UIAlertAction(title: "Logout", style: .destructive) { (logoutTapped) in
@@ -40,8 +42,4 @@ class MeVC: UIViewController {
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
-    
-    
-    
-
 }
