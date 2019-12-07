@@ -22,7 +22,7 @@ class CreatePostVC: UIViewController {
         super.viewDidLoad()
         textView.delegate = self
         sendButton.isEnabled = false
-        //textView.inputAccessoryView = sendButton
+        sendButton.bindToKeyboard()
 
     }
     //MARK:- setup Actions

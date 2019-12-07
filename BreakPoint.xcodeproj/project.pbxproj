@@ -21,8 +21,11 @@
 		E21BF934239A222000513D64 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF933239A222000513D64 /* AuthServices.swift */; };
 		E21BF936239A3A9E00513D64 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF935239A3A9E00513D64 /* FeedVC.swift */; };
 		E21BF938239A71A000513D64 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF937239A71A000513D64 /* MeVC.swift */; };
-		E21BF93A239A7C0E00513D64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */; };
 		E21BF93C239AA82100513D64 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF93B239AA82100513D64 /* CreatePostVC.swift */; };
+		E21BF941239AD54400513D64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21BF940239AD54300513D64 /* GoogleService-Info.plist */; };
+		E21BF943239AD55B00513D64 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF942239AD55B00513D64 /* UIViewExt.swift */; };
+		E21BF945239ADB0F00513D64 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF944239ADB0F00513D64 /* FeedCell.swift */; };
+		E21BF948239B103700513D64 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BF947239B103700513D64 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +47,11 @@
 		E21BF933239A222000513D64 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		E21BF935239A3A9E00513D64 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E21BF937239A71A000513D64 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
-		E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E21BF93B239AA82100513D64 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		E21BF940239AD54300513D64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E21BF942239AD55B00513D64 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		E21BF944239ADB0F00513D64 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		E21BF947239B103700513D64 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,15 +105,14 @@
 			isa = PBXGroup;
 			children = (
 				E21BF90C2399B77300513D64 /* AppDelegate.swift */,
-				E21BF9272399CE1F00513D64 /* Utilities */,
+				E21BF93F239AD51100513D64 /* Extensions */,
 				E21BF9262399CE1200513D64 /* Services */,
-				E21BF9252399CE0500513D64 /* Extensions */,
-				E21BF9242399CDFC00513D64 /* Models */,
+				E21BF946239B101400513D64 /* Models */,
 				E21BF9232399CDF200513D64 /* Views */,
 				E21BF9222399CDE900513D64 /* Controllers */,
 				E21BF9282399CE4700513D64 /* Support */,
 				E21BF91A2399B77900513D64 /* Info.plist */,
-				E21BF939239A7C0E00513D64 /* GoogleService-Info.plist */,
+				E21BF940239AD54300513D64 /* GoogleService-Info.plist */,
 			);
 			path = BreakPoint;
 			sourceTree = "<group>";
@@ -130,22 +135,9 @@
 			children = (
 				E21BF9292399E1DF00513D64 /* PaddingTextField.swift */,
 				E21BF92F239A1DDC00513D64 /* ShadowView.swift */,
+				E21BF944239ADB0F00513D64 /* FeedCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E21BF9242399CDFC00513D64 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E21BF9252399CE0500513D64 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E21BF9262399CE1200513D64 /* Services */ = {
@@ -157,13 +149,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		E21BF9272399CE1F00513D64 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		E21BF9282399CE4700513D64 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +157,22 @@
 				E21BF9152399B77900513D64 /* Assets.xcassets */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		E21BF93F239AD51100513D64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E21BF942239AD55B00513D64 /* UIViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E21BF946239B101400513D64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E21BF947239B103700513D64 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21BF9192399B77900513D64 /* LaunchScreen.storyboard in Resources */,
-				E21BF93A239A7C0E00513D64 /* GoogleService-Info.plist in Resources */,
+				E21BF941239AD54400513D64 /* GoogleService-Info.plist in Resources */,
 				E21BF9162399B77900513D64 /* Assets.xcassets in Resources */,
 				E21BF9142399B77300513D64 /* Main.storyboard in Resources */,
 			);
@@ -290,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21BF943239AD55B00513D64 /* UIViewExt.swift in Sources */,
+				E21BF945239ADB0F00513D64 /* FeedCell.swift in Sources */,
 				E21BF938239A71A000513D64 /* MeVC.swift in Sources */,
 				E21BF936239A3A9E00513D64 /* FeedVC.swift in Sources */,
 				E21BF9112399B77300513D64 /* GroupsVC.swift in Sources */,
@@ -301,6 +304,7 @@
 				E21BF90D2399B77300513D64 /* AppDelegate.swift in Sources */,
 				E21BF934239A222000513D64 /* AuthServices.swift in Sources */,
 				E21BF930239A1DDC00513D64 /* ShadowView.swift in Sources */,
+				E21BF948239B103700513D64 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
