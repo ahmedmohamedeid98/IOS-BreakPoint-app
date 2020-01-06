@@ -15,6 +15,7 @@ class Group{
     private var _key: String
     private var _membersCount: Int
     private var _members: [String]
+
     
     //computed properties
     var title: String {

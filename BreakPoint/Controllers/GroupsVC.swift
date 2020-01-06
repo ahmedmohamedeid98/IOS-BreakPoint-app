@@ -50,4 +50,10 @@ extension GroupsVC: UITableViewDelegate, UITableViewDataSource{
         cell.configureCell(title: group.title, description: group.description, membersCount: group.memberCount)
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let GroupPostVC = storyboard?.instantiateViewController(withIdentifier: "GroupPostVC") as? GroupPostVC else {return}
+        GroupPostVC.initGroupPostVC(withGroup: groupsArray[indexPath.row])
+        present(GroupPostVC, animated: true, completion: nil)
+        
+    }
 }
