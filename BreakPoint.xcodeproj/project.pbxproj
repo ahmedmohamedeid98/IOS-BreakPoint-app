@@ -31,6 +31,9 @@
 		E27821C9239BC7A70067A720 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27821C8239BC7A70067A720 /* Group.swift */; };
 		E289CDC923C2C636009529AC /* GroupPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289CDC823C2C636009529AC /* GroupPostVC.swift */; };
 		E289CDCD23C2C7BF009529AC /* groupPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289CDCC23C2C7BF009529AC /* groupPostCell.swift */; };
+		E289CDD123C310D5009529AC /* MeFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289CDD023C310D5009529AC /* MeFeedCell.swift */; };
+		E289CDD323C310EF009529AC /* MeGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289CDD223C310EF009529AC /* MeGroupsCell.swift */; };
+		E289CDD723C31738009529AC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289CDD623C31738009529AC /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		E27821C8239BC7A70067A720 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		E289CDC823C2C636009529AC /* GroupPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPostVC.swift; sourceTree = "<group>"; };
 		E289CDCC23C2C7BF009529AC /* groupPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupPostCell.swift; sourceTree = "<group>"; };
+		E289CDD023C310D5009529AC /* MeFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeFeedCell.swift; sourceTree = "<group>"; };
+		E289CDD223C310EF009529AC /* MeGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeGroupsCell.swift; sourceTree = "<group>"; };
+		E289CDD623C31738009529AC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,8 @@
 				E21EA49A239B54CA0009C04E /* userCell.swift */,
 				E27821C6239BC2F70067A720 /* groupCell.swift */,
 				E289CDCC23C2C7BF009529AC /* groupPostCell.swift */,
+				E289CDD023C310D5009529AC /* MeFeedCell.swift */,
+				E289CDD223C310EF009529AC /* MeGroupsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				E21BF942239AD55B00513D64 /* UIViewExt.swift */,
+				E289CDD623C31738009529AC /* Protocols.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21BF943239AD55B00513D64 /* UIViewExt.swift in Sources */,
+				E289CDD723C31738009529AC /* Protocols.swift in Sources */,
 				E21BF945239ADB0F00513D64 /* FeedCell.swift in Sources */,
 				E27821C7239BC2F70067A720 /* groupCell.swift in Sources */,
 				E21BF938239A71A000513D64 /* MeVC.swift in Sources */,
@@ -320,9 +330,11 @@
 				E289CDC923C2C636009529AC /* GroupPostVC.swift in Sources */,
 				E21EA499239B41470009C04E /* CreateGroupVC.swift in Sources */,
 				E21BF92A2399E1DF00513D64 /* PaddingTextField.swift in Sources */,
+				E289CDD123C310D5009529AC /* MeFeedCell.swift in Sources */,
 				E21BF93C239AA82100513D64 /* CreatePostVC.swift in Sources */,
 				E21BF90D2399B77300513D64 /* AppDelegate.swift in Sources */,
 				E21BF934239A222000513D64 /* AuthServices.swift in Sources */,
+				E289CDD323C310EF009529AC /* MeGroupsCell.swift in Sources */,
 				E21BF930239A1DDC00513D64 /* ShadowView.swift in Sources */,
 				E21BF948239B103700513D64 /* Message.swift in Sources */,
 			);

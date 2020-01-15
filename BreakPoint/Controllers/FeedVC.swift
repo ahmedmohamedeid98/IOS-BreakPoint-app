@@ -8,10 +8,26 @@
 
 import UIKit
 
-class FeedVC: UIViewController {
+class FeedVC: UIViewController {//, GetUserMessagesInFeed {
+    
     //MARK:- Properities
     @IBOutlet weak var tableView: UITableView!
+    
     var messageArray = [Message]()
+    
+    // Confirm Protocol
+    /*
+    func getAllMessagesInFeed(userId uid: String) -> [String] {
+        print("~~~~~~Enterd Protocol~~~~~~~")
+        var userMessages = [String]()
+        for message in messageArray{
+            if message.senterId == uid{
+                userMessages.append(message.content)
+            }
+        }
+        return userMessages
+    }
+    */
     
     //MARK:- Init
     override func viewDidLoad() {
@@ -25,6 +41,7 @@ class FeedVC: UIViewController {
             self.messageArray = messages.reversed()
             self.tableView.reloadData()
         }
+        
     }
 
    

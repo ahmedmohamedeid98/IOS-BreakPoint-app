@@ -207,7 +207,6 @@
         <!--Group PostVC-->
         <scene sceneID="3tQ-Si-Ldr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o0R-oC-fj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="GroupPostVC" id="Pp2-5K-Zva" customClass="GroupPostVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1r-x4-qpO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -335,13 +334,14 @@
                         <outlet property="textField" destination="BrO-Sm-N5l" id="QJu-Pz-QlJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0R-oC-fj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1800.8" y="1052.9235382308846"/>
         </scene>
         <!--me-->
         <scene sceneID="mJT-e1-Vy1">
             <objects>
-                <viewController id="tnX-Q6-036" customClass="MeVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeVC_ID" id="tnX-Q6-036" customClass="MeVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AJS-61-0da">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,6 +390,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tnX-Q6-036" id="h7w-3y-0kv"/>
+                                    <outlet property="delegate" destination="tnX-Q6-036" id="hXB-IQ-IRZ"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTs-7A-OhJ">
                                 <rect key="frame" x="0.0" y="100" width="375" height="240"/>
